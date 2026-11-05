@@ -32,19 +32,19 @@ Do not silently merge similarly named variants across types. Preserve historical
 
 ## Baseline variant inventory
 
-This is the v1.0.0 baseline found in the supplied fuller source set. It is an inventory, not a limit. Future source review may discover additional variants and must extend the registry without invalidating existing IDs.
+This is the current exact, case-sensitive inventory found in the supplied fuller source set. Variant strings that differ by capitalization remain distinct because the legacy dispatch code treats them as distinct. It is an inventory, not a limit. Future source review may discover additional variants and must extend the registry without invalidating existing IDs.
 
 | Transformation | Declared/selectable variants | Direct implementation branches | Baseline note |
 |---|---:|---:|---|
 | Appoggiatura | 160 | 160 | Independently confirmed by `appoggiatura_variant_pool.cpp`. |
-| Compound appoggiatura | 106 | 71 direct branches | Remaining entries require helper-dispatch cross-reference before classification. |
+| Compound appoggiatura | 106 | 120 direct branches | Direct branch inventory is larger than the selectable generator pool and requires registry reconciliation. |
 | Mordent | 6 selectable | 8 implementation branches | `M` and `MR` are implemented branches not present in the selectable pool. |
-| Slide | 29 | 29 | Exact string/registry validation is required. |
-| Snap | 5 selectable | 4 direct branches | `SPvM3` is selectable but has no matching direct branch in the baseline. |
+| Slide | 74 | 74 | The fuller source contains 74 exact, case-sensitive entries. |
+| Snap | 5 selectable | 5 direct branches | The fuller source contains a direct `SPvM3` branch; the earlier mismatch was an incomplete inventory. |
 | Trill | 56 | 56 | Several literals contain trailing spaces and require normalization review. |
 | Turn | 55 | 55 | Preserve the existing full names and grouping. |
 
-The registry and tests must report both declared/selectable and executable status where they differ. Never hide a discrepancy by reducing the count.
+The registry and tests must report both declared/selectable and executable status where they differ. Never hide a discrepancy by reducing the count. The generated registry currently identifies 14 compound-appoggiatura branch names that are not in the selectable generator pool and two mordent branches (`M`, `MR`) that are not in its selectable pool.
 
 ## MIDI analyzer and the 62 labels
 

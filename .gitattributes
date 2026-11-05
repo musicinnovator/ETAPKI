@@ -1,0 +1,6 @@
+# Imported formula/analyzer evidence must remain byte-stable and unnormalized.
+reference/source/** -text -diff
+
+# Generated registries and manifests remain readable text.
+data/** text eol=lf
+reference/source-manifest.json text eol=lf

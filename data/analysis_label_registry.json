@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "WorkingSourceFiles.zip",
+  "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+  "labelCount": 62,
+  "analysisLabels": [
+    {
+      "number": 1,
+      "id": "RN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.RN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 2,
+      "id": "U2R",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.U2R",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 3,
+      "id": "FN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.FN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 4,
+      "id": "I8",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.I8",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 5,
+      "id": "LP",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LP",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 6,
+      "id": "RLN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.RLN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 7,
+      "id": "QN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.QN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 8,
+      "id": "CS",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.CS",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 9,
+      "id": "I3",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.I3",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 10,
+      "id": "BM",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.BM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 11,
+      "id": "MM",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.MM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 12,
+      "id": "EM",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.EM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 13,
+      "id": "SPU",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.SPU",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 14,
+      "id": "SPD",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.SPD",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 15,
+      "id": "CH",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.CH",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 16,
+      "id": "CW",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.CW",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 17,
+      "id": "CD",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.CD",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 18,
+      "id": "HT",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.HT",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 19,
+      "id": "FM",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.FM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 20,
+      "id": "SYP",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SYP",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 21,
+      "id": "SLP",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SLP",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 22,
+      "id": "RDN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.RDN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 23,
+      "id": "LAD",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LAD",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 24,
+      "id": "DN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.DN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 25,
+      "id": "DNW",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.DNW",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 26,
+      "id": "SN",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 27,
+      "id": "LNSN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LNSN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 28,
+      "id": "SAN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.SAN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 29,
+      "id": "RTR2",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.RTR2",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 30,
+      "id": "TNTDN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.TNTDN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 31,
+      "id": "SMP",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.SMP",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 32,
+      "id": "SPNSA",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.SPNSA",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 33,
+      "id": "DHT",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.DHT",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 34,
+      "id": "DBC",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.DBC",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 35,
+      "id": "DDN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.DDN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 36,
+      "id": "LNR",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LNR",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 37,
+      "id": "LNSAS",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LNSAS",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 38,
+      "id": "LNSAL",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.LNSAL",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 39,
+      "id": "DI",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.DI",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 40,
+      "id": "NLN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.NLN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 41,
+      "id": "TNTLN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.TNTLN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 42,
+      "id": "TNTTN",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.TNTTN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 43,
+      "id": "Mmd7",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.Mmd7",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 44,
+      "id": "MmAug6",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.MmAug6",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 45,
+      "id": "MmAug4",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.MmAug4",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 46,
+      "id": "Mmm3",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.Mmm3",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 47,
+      "id": "NSALP",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.NSALP",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 48,
+      "id": "BNIR",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.BNIR",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 49,
+      "id": "IPASC",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.IPASC",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 50,
+      "id": "IPASV",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.IPASV",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 51,
+      "id": "RTDS",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.RTDS",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 52,
+      "id": "BRTD",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.BRTD",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 53,
+      "id": "SPCM",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SPCM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 54,
+      "id": "SPDM",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SPDM",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 55,
+      "id": "SSN",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SSN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 56,
+      "id": "SVN",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.SVN",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 57,
+      "id": "ANS",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.ANS",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 58,
+      "id": "ANL",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.ANL",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 59,
+      "id": "FTB",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.FTB",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 60,
+      "id": "CDB",
+      "state": "placeholder-no-detection-method",
+      "detectionMethodId": "unimplemented.CDB",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Label is catalogued but no detection rule was found in processLabels."
+    },
+    {
+      "number": 61,
+      "id": "DLP3",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.DLP3",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    },
+    {
+      "number": 62,
+      "id": "IALD",
+      "state": "reference-implemented-not-integrated",
+      "detectionMethodId": "reference.processLabels.IALD",
+      "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+    }
+  ]
+}

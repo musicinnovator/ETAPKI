@@ -74,10 +74,10 @@ The first registry import should preserve the current inventory exactly, includi
 | Type | Declared/selectable | Direct branches | Required follow-up |
 |---|---:|---:|---|
 | Appoggiatura | 160 | 160 | Compare the main source and variant pool by canonical ID. |
-| Compound appoggiatura | 106 | 71 direct | Trace the remaining 35 through helper functions before labeling them missing. |
+| Compound appoggiatura | 106 | 120 direct | Reconcile 14 exact branch names that are not in the selectable generator pool. |
 | Mordent | 6 | 8 | Decide whether `M` and `MR` should become selectable; preserve both implementations meanwhile. |
-| Slide | 29 | 29 | Normalize and test exact names without changing formula behavior. |
-| Snap | 5 | 4 direct | Resolve the `SPvM3` selection/implementation mismatch. |
+| Slide | 74 | 74 | Preserve all 74 exact, case-sensitive names and validate selection dispatch. |
+| Snap | 5 | 5 direct | The fuller source includes a direct `SPvM3` branch; preserve it and test selection dispatch. |
 | Trill | 56 | 56 | Remove trailing-space ambiguity at the registry boundary and retain aliases. |
 | Turn | 55 | 55 | Preserve all current groupings and full variant names. |
 
@@ -317,8 +317,8 @@ If an external destination is unavailable, do not silently substitute C: or clai
 
 1. Confirm the seven full transformation source files and their provenance in the repository.
 2. Generate a machine-readable variant registry without changing formula code.
-3. Cross-reference all 106 compound-appoggiatura entries through direct and helper dispatch.
-4. Resolve the mordent and snap selection mismatches.
+3. Cross-reference all 106 compound-appoggiatura selectable entries against the 120 exact direct branches.
+4. Resolve the mordent selection mismatch and document the 14 compound branch-only names.
 5. Normalize trill lookup at the registry boundary while preserving historical aliases.
 6. Produce the 62-label implementation-status matrix.
 7. Add characterization tests before integrating the UI.

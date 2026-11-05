@@ -1,0 +1,22 @@
+# Out-of-source C++ build artifacts
+/build/
+/cmake-build-*/
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.pdb
+
+# Local IDE and test artifacts
+/.vs/
+/.idea/workspace.xml
+*.user
+*.suo
+*.log
+
+# Local package/export artifacts; approved packages live outside the repository on E:/D:
+/package/
+/packages/
+/release/

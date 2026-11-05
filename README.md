@@ -14,15 +14,15 @@ All transformation variants remain traceable to exactly one of these types:
 - Trill
 - Turn
 
-The current v1.0.0 source inventory is a baseline rather than a ceiling:
+The current exact, case-sensitive source inventory is a baseline rather than a ceiling. Variant strings with different capitalization remain distinct until an explicit alias policy is approved:
 
 | Type | Declared/selectable | Direct implementation branches |
 |---|---:|---:|
 | Appoggiatura | 160 | 160 |
-| Compound appoggiatura | 106 | 71 direct branches; helper-dispatch review pending |
+| Compound appoggiatura | 106 | 120 direct branches; selection reconciliation pending |
 | Mordent | 6 | 8 |
-| Slide | 29 | 29 |
-| Snap | 5 | 4 |
+| Slide | 74 | 74 |
+| Snap | 5 | 5 |
 | Trill | 56 | 56 |
 | Turn | 55 | 55 |
 
@@ -85,3 +85,23 @@ Before writing builds or packages, verify both external drives, available space,
 - No packaging occurs before validation and explicit approval.
 
 See [AGENTS.md](AGENTS.md) for the complete repository operating rules and [PROJECT_PROPOSAL.md](PROJECT_PROPOSAL.md) for the implementation roadmap and UI/UX proposal.
+
+## Current implementation
+
+The first additive core is in place:
+
+- `data/variant_registry.json` records the exact case-sensitive source inventory;
+- `data/analysis_label_registry.json` records all 62 labels, including 24 current placeholders;
+- `src/core` provides a bounds-checked MIDI parser, byte-preserving serializer, integrity gate, revision plan, and explicit seven-type reference-only router;
+- `reference/source` contains the imported C++ evidence unchanged, with `reference/source-manifest.json` for SHA-256 provenance;
+- `etapki_cli catalog` reports the registry baseline and `etapki_cli inspect <file.mid>` validates a MIDI file and its byte-preserving export path.
+
+Build and test output belongs outside the repository on E:, for example:
+
+```powershell
+cmake -S E:\ETAPKI_GitHub -B E:\ETAPKIBuilds\etapki-core -G "MinGW Makefiles" -DETAPKI_BUILD_TESTS=ON
+cmake --build E:\ETAPKIBuilds\etapki-core --parallel 2
+ctest --test-dir E:\ETAPKIBuilds\etapki-core --output-on-failure
+```
+
+Use `tools/package-external.ps1` only after validation, with a required label and an E: build directory. It creates distinct, verified package outputs on E: and D:.

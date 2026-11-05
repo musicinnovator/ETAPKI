@@ -1,0 +1,3894 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "WorkingSourceFiles.zip",
+  "sourceRoot": "reference/source/transformations",
+  "transformationTypes": [
+    {
+      "id": "appoggiatura",
+      "displayName": "Appoggiatura",
+      "sourceFile": "reference/source/transformations/NewEnhancedAppoggiaturaTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 160,
+      "directImplementationBranchCount": 160,
+      "variants": [
+        {
+          "id": "appoggiatura.rpnb",
+          "displayName": "RPNB",
+          "canonicalName": "RPNB",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-preb1",
+          "displayName": "RPNB.PREb1",
+          "canonicalName": "RPNB.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-preb5",
+          "displayName": "RPNB.PREb5",
+          "canonicalName": "RPNB.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-prea1",
+          "displayName": "RPNB.PREa1",
+          "canonicalName": "RPNB.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-prea5",
+          "displayName": "RPNB.PREa5",
+          "canonicalName": "RPNB.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-postb1",
+          "displayName": "RPNB.POSTb1",
+          "canonicalName": "RPNB.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-postb5",
+          "displayName": "RPNB.POSTb5",
+          "canonicalName": "RPNB.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-posta1",
+          "displayName": "RPNB.POSTa1",
+          "canonicalName": "RPNB.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpnb-posta5",
+          "displayName": "RPNB.POSTa5",
+          "canonicalName": "RPNB.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna",
+          "displayName": "RPNA",
+          "canonicalName": "RPNA",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-preb1",
+          "displayName": "RPNA.PREb1",
+          "canonicalName": "RPNA.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-preb5",
+          "displayName": "RPNA.PREb5",
+          "canonicalName": "RPNA.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-prea5",
+          "displayName": "RPNA.PREa5",
+          "canonicalName": "RPNA.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-prea1",
+          "displayName": "RPNA.PREa1",
+          "canonicalName": "RPNA.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-postb1",
+          "displayName": "RPNA.POSTb1",
+          "canonicalName": "RPNA.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-postb5",
+          "displayName": "RPNA.POSTb5",
+          "canonicalName": "RPNA.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-posta5",
+          "displayName": "RPNA.POSTa5",
+          "canonicalName": "RPNA.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.rpna-posta1",
+          "displayName": "RPNA.POSTa1",
+          "canonicalName": "RPNA.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1",
+          "displayName": "SAN1",
+          "canonicalName": "SAN1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5",
+          "displayName": "SAN5",
+          "canonicalName": "SAN5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-preb1",
+          "displayName": "SAN1.PREb1",
+          "canonicalName": "SAN1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-preb5",
+          "displayName": "SAN5.PREb5",
+          "canonicalName": "SAN5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-preb5",
+          "displayName": "SAN1.PREb5",
+          "canonicalName": "SAN1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-preb1",
+          "displayName": "SAN5.PREb1",
+          "canonicalName": "SAN5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-prea1",
+          "displayName": "SAN1.PREa1",
+          "canonicalName": "SAN1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-prea5",
+          "displayName": "SAN5.PREa5",
+          "canonicalName": "SAN5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-prea5",
+          "displayName": "SAN1.PREa5",
+          "canonicalName": "SAN1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-prea1",
+          "displayName": "SAN5.PREa1",
+          "canonicalName": "SAN5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-posta1",
+          "displayName": "SAN1.POSTa1",
+          "canonicalName": "SAN1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-posta5",
+          "displayName": "SAN1.POSTa5",
+          "canonicalName": "SAN1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-posta5",
+          "displayName": "SAN5.POSTa5",
+          "canonicalName": "SAN5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-posta1",
+          "displayName": "SAN5.POSTa1",
+          "canonicalName": "SAN5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-postb1",
+          "displayName": "SAN1.POSTb1",
+          "canonicalName": "SAN1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san1-postb5",
+          "displayName": "SAN1.POSTb5",
+          "canonicalName": "SAN1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-postb5",
+          "displayName": "SAN5.POSTb5",
+          "canonicalName": "SAN5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.san5-postb1",
+          "displayName": "SAN5.POSTb1",
+          "canonicalName": "SAN5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1",
+          "displayName": "SBN1",
+          "canonicalName": "SBN1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5",
+          "displayName": "SBN5",
+          "canonicalName": "SBN5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-preb1",
+          "displayName": "SBN1.PREb1",
+          "canonicalName": "SBN1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-preb5",
+          "displayName": "SBN1.PREb5",
+          "canonicalName": "SBN1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-preb5",
+          "displayName": "SBN5.PREb5",
+          "canonicalName": "SBN5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-preb1",
+          "displayName": "SBN5.PREb1",
+          "canonicalName": "SBN5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-prea1",
+          "displayName": "SBN1.PREa1",
+          "canonicalName": "SBN1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-prea5",
+          "displayName": "SBN1.PREa5",
+          "canonicalName": "SBN1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-prea5",
+          "displayName": "SBN5.PREa5",
+          "canonicalName": "SBN5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-prea1",
+          "displayName": "SBN5.PREa1",
+          "canonicalName": "SBN5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-postb1",
+          "displayName": "SBN1.POSTb1",
+          "canonicalName": "SBN1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-postb5",
+          "displayName": "SBN1.POSTb5",
+          "canonicalName": "SBN1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-postb5",
+          "displayName": "SBN5.POSTb5",
+          "canonicalName": "SBN5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-postb1",
+          "displayName": "SBN5.POSTb1",
+          "canonicalName": "SBN5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-posta1",
+          "displayName": "SBN1.POSTa1",
+          "canonicalName": "SBN1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn1-posta5",
+          "displayName": "SBN1.POSTa5",
+          "canonicalName": "SBN1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-posta5",
+          "displayName": "SBN5.POSTa5",
+          "canonicalName": "SBN5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.sbn5-posta1",
+          "displayName": "SBN5.POSTa1",
+          "canonicalName": "SBN5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp",
+          "displayName": "LURP",
+          "canonicalName": "LURP",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-preb1",
+          "displayName": "LURP1.PREb1",
+          "canonicalName": "LURP1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-preb5",
+          "displayName": "LURP1.PREb5",
+          "canonicalName": "LURP1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-preb5",
+          "displayName": "LURP5.PREb5",
+          "canonicalName": "LURP5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-preb1",
+          "displayName": "LURP5.PREb1",
+          "canonicalName": "LURP5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-prea1",
+          "displayName": "LURP1.PREa1",
+          "canonicalName": "LURP1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-prea5",
+          "displayName": "LURP1.PREa5",
+          "canonicalName": "LURP1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-prea5",
+          "displayName": "LURP5.PREa5",
+          "canonicalName": "LURP5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-prea1",
+          "displayName": "LURP5.PREa1",
+          "canonicalName": "LURP5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-postb1",
+          "displayName": "LURP1.POSTb1",
+          "canonicalName": "LURP1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-postb5",
+          "displayName": "LURP1.POSTb5",
+          "canonicalName": "LURP1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-postb5",
+          "displayName": "LURP5.POSTb5",
+          "canonicalName": "LURP5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-postb1",
+          "displayName": "LURP5.POSTb1",
+          "canonicalName": "LURP5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-posta1",
+          "displayName": "LURP1.POSTa1",
+          "canonicalName": "LURP1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp1-posta5",
+          "displayName": "LURP1.POSTa5",
+          "canonicalName": "LURP1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-posta5",
+          "displayName": "LURP5.POSTa5",
+          "canonicalName": "LURP5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lurp5-posta1",
+          "displayName": "LURP5.POSTa1",
+          "canonicalName": "LURP5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp",
+          "displayName": "LDRP",
+          "canonicalName": "LDRP",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-preb1",
+          "displayName": "LDRP1.PREb1",
+          "canonicalName": "LDRP1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-preb5",
+          "displayName": "LDRP1.PREb5",
+          "canonicalName": "LDRP1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-preb5",
+          "displayName": "LDRP5.PREb5",
+          "canonicalName": "LDRP5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-preb1",
+          "displayName": "LDRP5.PREb1",
+          "canonicalName": "LDRP5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-prea1",
+          "displayName": "LDRP1.PREa1",
+          "canonicalName": "LDRP1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-prea5",
+          "displayName": "LDRP1.PREa5",
+          "canonicalName": "LDRP1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-prea5",
+          "displayName": "LDRP5.PREa5",
+          "canonicalName": "LDRP5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-prea1",
+          "displayName": "LDRP5.PREa1",
+          "canonicalName": "LDRP5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-postb1",
+          "displayName": "LDRP1.POSTb1",
+          "canonicalName": "LDRP1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-postb5",
+          "displayName": "LDRP1.POSTb5",
+          "canonicalName": "LDRP1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-postb5",
+          "displayName": "LDRP5.POSTb5",
+          "canonicalName": "LDRP5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-postb1",
+          "displayName": "LDRP5.POSTb1",
+          "canonicalName": "LDRP5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-posta1",
+          "displayName": "LDRP1.POSTa1",
+          "canonicalName": "LDRP1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp1-posta5",
+          "displayName": "LDRP1.POSTa5",
+          "canonicalName": "LDRP1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-posta5",
+          "displayName": "LDRP5.POSTa5",
+          "canonicalName": "LDRP5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldrp5-posta1",
+          "displayName": "LDRP5.POSTa1",
+          "canonicalName": "LDRP5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1",
+          "displayName": "LUSA1",
+          "canonicalName": "LUSA1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5",
+          "displayName": "LUSA5",
+          "canonicalName": "LUSA5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-preb1",
+          "displayName": "LUSA1.PREb1",
+          "canonicalName": "LUSA1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-preb5",
+          "displayName": "LUSA1.PREb5",
+          "canonicalName": "LUSA1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-preb5",
+          "displayName": "LUSA5.PREb5",
+          "canonicalName": "LUSA5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-preb1",
+          "displayName": "LUSA5.PREb1",
+          "canonicalName": "LUSA5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-prea1",
+          "displayName": "LUSA1.PREa1",
+          "canonicalName": "LUSA1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-prea5",
+          "displayName": "LUSA1.PREa5",
+          "canonicalName": "LUSA1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-prea5",
+          "displayName": "LUSA5.PREa5",
+          "canonicalName": "LUSA5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-prea1",
+          "displayName": "LUSA5.PREa1",
+          "canonicalName": "LUSA5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-postb1",
+          "displayName": "LUSA1.POSTb1",
+          "canonicalName": "LUSA1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-postb5",
+          "displayName": "LUSA1.POSTb5",
+          "canonicalName": "LUSA1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-postb5",
+          "displayName": "LUSA5.POSTb5",
+          "canonicalName": "LUSA5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-postb1",
+          "displayName": "LUSA5.POSTb1",
+          "canonicalName": "LUSA5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-posta1",
+          "displayName": "LUSA1.POSTa1",
+          "canonicalName": "LUSA1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa1-posta5",
+          "displayName": "LUSA1.POSTa5",
+          "canonicalName": "LUSA1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-posta5",
+          "displayName": "LUSA5.POSTa5",
+          "canonicalName": "LUSA5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusa5-posta1",
+          "displayName": "LUSA5.POSTa1",
+          "canonicalName": "LUSA5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1",
+          "displayName": "LUSB1",
+          "canonicalName": "LUSB1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5",
+          "displayName": "LUSB5",
+          "canonicalName": "LUSB5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-preb1",
+          "displayName": "LUSB1.PREb1",
+          "canonicalName": "LUSB1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-preb5",
+          "displayName": "LUSB1.PREb5",
+          "canonicalName": "LUSB1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-preb5",
+          "displayName": "LUSB5.PREb5",
+          "canonicalName": "LUSB5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-preb1",
+          "displayName": "LUSB5.PREb1",
+          "canonicalName": "LUSB5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-prea1",
+          "displayName": "LUSB1.PREa1",
+          "canonicalName": "LUSB1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-prea5",
+          "displayName": "LUSB1.PREa5",
+          "canonicalName": "LUSB1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-prea5",
+          "displayName": "LUSB5.PREa5",
+          "canonicalName": "LUSB5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-prea1",
+          "displayName": "LUSB5.PREa1",
+          "canonicalName": "LUSB5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-postb1",
+          "displayName": "LUSB1.POSTb1",
+          "canonicalName": "LUSB1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-postb5",
+          "displayName": "LUSB1.POSTb5",
+          "canonicalName": "LUSB1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-postb5",
+          "displayName": "LUSB5.POSTb5",
+          "canonicalName": "LUSB5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-postb1",
+          "displayName": "LUSB5.POSTb1",
+          "canonicalName": "LUSB5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-posta1",
+          "displayName": "LUSB1.POSTa1",
+          "canonicalName": "LUSB1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb1-posta5",
+          "displayName": "LUSB1.POSTa5",
+          "canonicalName": "LUSB1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-posta5",
+          "displayName": "LUSB5.POSTa5",
+          "canonicalName": "LUSB5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.lusb5-posta1",
+          "displayName": "LUSB5.POSTa1",
+          "canonicalName": "LUSB5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1",
+          "displayName": "LDSA1",
+          "canonicalName": "LDSA1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5",
+          "displayName": "LDSA5",
+          "canonicalName": "LDSA5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-preb1",
+          "displayName": "LDSA1.PREb1",
+          "canonicalName": "LDSA1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-preb5",
+          "displayName": "LDSA1.PREb5",
+          "canonicalName": "LDSA1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-preb5",
+          "displayName": "LDSA5.PREb5",
+          "canonicalName": "LDSA5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-preb1",
+          "displayName": "LDSA5.PREb1",
+          "canonicalName": "LDSA5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-prea1",
+          "displayName": "LDSA1.PREa1",
+          "canonicalName": "LDSA1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-prea5",
+          "displayName": "LDSA1.PREa5",
+          "canonicalName": "LDSA1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-prea5",
+          "displayName": "LDSA5.PREa5",
+          "canonicalName": "LDSA5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-prea1",
+          "displayName": "LDSA5.PREa1",
+          "canonicalName": "LDSA5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-postb1",
+          "displayName": "LDSA1.POSTb1",
+          "canonicalName": "LDSA1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-postb5",
+          "displayName": "LDSA1.POSTb5",
+          "canonicalName": "LDSA1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-postb5",
+          "displayName": "LDSA5.POSTb5",
+          "canonicalName": "LDSA5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-postb1",
+          "displayName": "LDSA5.POSTb1",
+          "canonicalName": "LDSA5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-posta1",
+          "displayName": "LDSA1.POSTa1",
+          "canonicalName": "LDSA1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa1-posta5",
+          "displayName": "LDSA1.POSTa5",
+          "canonicalName": "LDSA1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-posta5",
+          "displayName": "LDSA5.POSTa5",
+          "canonicalName": "LDSA5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsa5-posta1",
+          "displayName": "LDSA5.POSTa1",
+          "canonicalName": "LDSA5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1",
+          "displayName": "LDSB1",
+          "canonicalName": "LDSB1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5",
+          "displayName": "LDSB5",
+          "canonicalName": "LDSB5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-preb1",
+          "displayName": "LDSB1.PREb1",
+          "canonicalName": "LDSB1.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-preb5",
+          "displayName": "LDSB1.PREb5",
+          "canonicalName": "LDSB1.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-preb5",
+          "displayName": "LDSB5.PREb5",
+          "canonicalName": "LDSB5.PREb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-preb1",
+          "displayName": "LDSB5.PREb1",
+          "canonicalName": "LDSB5.PREb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-prea1",
+          "displayName": "LDSB1.PREa1",
+          "canonicalName": "LDSB1.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-prea5",
+          "displayName": "LDSB1.PREa5",
+          "canonicalName": "LDSB1.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-prea5",
+          "displayName": "LDSB5.PREa5",
+          "canonicalName": "LDSB5.PREa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-prea1",
+          "displayName": "LDSB5.PREa1",
+          "canonicalName": "LDSB5.PREa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-postb1",
+          "displayName": "LDSB1.POSTb1",
+          "canonicalName": "LDSB1.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-postb5",
+          "displayName": "LDSB1.POSTb5",
+          "canonicalName": "LDSB1.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-postb5",
+          "displayName": "LDSB5.POSTb5",
+          "canonicalName": "LDSB5.POSTb5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-postb1",
+          "displayName": "LDSB5.POSTb1",
+          "canonicalName": "LDSB5.POSTb1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-posta1",
+          "displayName": "LDSB1.POSTa1",
+          "canonicalName": "LDSB1.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb1-posta5",
+          "displayName": "LDSB1.POSTa5",
+          "canonicalName": "LDSB1.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-posta5",
+          "displayName": "LDSB5.POSTa5",
+          "canonicalName": "LDSB5.POSTa5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "appoggiatura.ldsb5-posta1",
+          "displayName": "LDSB5.POSTa1",
+          "canonicalName": "LDSB5.POSTa1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    },
+    {
+      "id": "compound-appoggiatura",
+      "displayName": "Compound appoggiatura",
+      "sourceFile": "reference/source/transformations/NewEnhancedCompoundAppoggiaturaTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 106,
+      "directImplementationBranchCount": 120,
+      "variants": [
+        {
+          "id": "compound-appoggiatura.a4m",
+          "displayName": "A4M",
+          "canonicalName": "A4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p5m",
+          "displayName": "P5M",
+          "canonicalName": "P5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p4m",
+          "displayName": "P4M",
+          "canonicalName": "P4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m7m",
+          "displayName": "m7M",
+          "canonicalName": "m7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m6m",
+          "displayName": "m6M",
+          "canonicalName": "m6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m3m",
+          "displayName": "m3M",
+          "canonicalName": "m3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m6m-2",
+          "displayName": "M6M",
+          "canonicalName": "M6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m3m-2",
+          "displayName": "M3M",
+          "canonicalName": "M3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m7m-2",
+          "displayName": "M7M",
+          "canonicalName": "M7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p8m",
+          "displayName": "P8M",
+          "canonicalName": "P8M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cap5",
+          "displayName": "1CAP5",
+          "canonicalName": "1CAP5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cap4",
+          "displayName": "1CAP4",
+          "canonicalName": "1CAP4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam7",
+          "displayName": "1CAm7",
+          "canonicalName": "1CAm7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam6",
+          "displayName": "1CAm6",
+          "canonicalName": "1CAm6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam3",
+          "displayName": "1CAm3",
+          "canonicalName": "1CAm3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1caa4",
+          "displayName": "1CAA4",
+          "canonicalName": "1CAA4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam7-2",
+          "displayName": "1CAM7",
+          "canonicalName": "1CAM7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam6-2",
+          "displayName": "1CAM6",
+          "canonicalName": "1CAM6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1cam3-2",
+          "displayName": "1CAM3",
+          "canonicalName": "1CAM3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcap5",
+          "displayName": "1dCAP5",
+          "canonicalName": "1dCAP5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcap4",
+          "displayName": "1dCAP4",
+          "canonicalName": "1dCAP4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam7",
+          "displayName": "1dCAm7",
+          "canonicalName": "1dCAm7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam6",
+          "displayName": "1dCAm6",
+          "canonicalName": "1dCAm6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam3",
+          "displayName": "1dCAm3",
+          "canonicalName": "1dCAm3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcaa4",
+          "displayName": "1dCAA4",
+          "canonicalName": "1dCAA4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam7-2",
+          "displayName": "1dCAM7",
+          "canonicalName": "1dCAM7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam6-2",
+          "displayName": "1dCAM6",
+          "canonicalName": "1dCAM6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.1dcam3-2",
+          "displayName": "1dCAM3",
+          "canonicalName": "1dCAM3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cap5",
+          "displayName": "2CAP5",
+          "canonicalName": "2CAP5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cap4",
+          "displayName": "2CAP4",
+          "canonicalName": "2CAP4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam7",
+          "displayName": "2CAm7",
+          "canonicalName": "2CAm7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam6",
+          "displayName": "2CAm6",
+          "canonicalName": "2CAm6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam3",
+          "displayName": "2CAm3",
+          "canonicalName": "2CAm3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2caa4",
+          "displayName": "2CAA4",
+          "canonicalName": "2CAA4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam7-2",
+          "displayName": "2CAM7",
+          "canonicalName": "2CAM7",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam6-2",
+          "displayName": "2CAM6",
+          "canonicalName": "2CAM6",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.2cam3-2",
+          "displayName": "2CAM3",
+          "canonicalName": "2CAM3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcap5m",
+          "displayName": "RCAP5m",
+          "canonicalName": "RCAP5m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcap5m-2",
+          "displayName": "RCAP5M",
+          "canonicalName": "RCAP5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcap4m",
+          "displayName": "RCAP4M",
+          "canonicalName": "RCAP4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcap4m-2",
+          "displayName": "RCAP4m",
+          "canonicalName": "RCAP4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam7m",
+          "displayName": "RCAm7M",
+          "canonicalName": "RCAm7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam7m-2",
+          "displayName": "RCAm7m",
+          "canonicalName": "RCAm7m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam6m",
+          "displayName": "RCAm6m",
+          "canonicalName": "RCAm6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam6m-2",
+          "displayName": "RCAm6M",
+          "canonicalName": "RCAm6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam3m",
+          "displayName": "RCAm3m",
+          "canonicalName": "RCAm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam6m-3",
+          "displayName": "RCAM6m",
+          "canonicalName": "RCAM6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam6m-4",
+          "displayName": "RCAM6M",
+          "canonicalName": "RCAM6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam3m-2",
+          "displayName": "RCAM3M",
+          "canonicalName": "RCAM3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcam3m-3",
+          "displayName": "RCAM3m",
+          "canonicalName": "RCAM3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sana4m",
+          "displayName": "SANA4M",
+          "canonicalName": "SANA4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm3m",
+          "displayName": "SANM3M",
+          "canonicalName": "SANM3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm6p",
+          "displayName": "SANM6P",
+          "canonicalName": "SANM6P",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm7m",
+          "displayName": "SANM7M",
+          "canonicalName": "SANM7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm3m-2",
+          "displayName": "SANm3m",
+          "canonicalName": "SANm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm6d",
+          "displayName": "SANm6d",
+          "canonicalName": "SANm6d",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanm7m-2",
+          "displayName": "SANm7m",
+          "canonicalName": "SANm7m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanp4m",
+          "displayName": "SANP4m",
+          "canonicalName": "SANP4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.sanp5p",
+          "displayName": "SANP5P",
+          "canonicalName": "SANP5P",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.ta4md1",
+          "displayName": "TA4Md1",
+          "canonicalName": "TA4Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tp5md1",
+          "displayName": "TP5Md1",
+          "canonicalName": "TP5Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tp4md1",
+          "displayName": "TP4Md1",
+          "canonicalName": "TP4Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm7md1",
+          "displayName": "Tm7Md1",
+          "canonicalName": "Tm7Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm6md1",
+          "displayName": "Tm6Md1",
+          "canonicalName": "Tm6Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm3md1",
+          "displayName": "Tm3Md1",
+          "canonicalName": "Tm3Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm6md1-2",
+          "displayName": "TM6Md1",
+          "canonicalName": "TM6Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm3md1-2",
+          "displayName": "TM3Md1",
+          "canonicalName": "TM3Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tm7md1-2",
+          "displayName": "TM7Md1",
+          "canonicalName": "TM7Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.tp8md1",
+          "displayName": "TP8Md1",
+          "canonicalName": "TP8Md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm3m",
+          "displayName": "CATm3M",
+          "canonicalName": "CATm3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm6m",
+          "displayName": "CATm6m",
+          "canonicalName": "CATm6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm7m",
+          "displayName": "CATm7M",
+          "canonicalName": "CATm7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catp4m",
+          "displayName": "CATP4M",
+          "canonicalName": "CATP4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catp5m",
+          "displayName": "CATP5M",
+          "canonicalName": "CATP5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.cata4m",
+          "displayName": "CATA4M",
+          "canonicalName": "CATA4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm3m-2",
+          "displayName": "CATM3M",
+          "canonicalName": "CATM3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm6m-2",
+          "displayName": "CATM6M",
+          "canonicalName": "CATM6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm7m-2",
+          "displayName": "CATM7M",
+          "canonicalName": "CATM7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm3m",
+          "displayName": "RCATm3M",
+          "canonicalName": "RCATm3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm6m",
+          "displayName": "RCATm6m",
+          "canonicalName": "RCATm6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm7m",
+          "displayName": "RCATm7M",
+          "canonicalName": "RCATm7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatp4m",
+          "displayName": "RCATP4M",
+          "canonicalName": "RCATP4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatp5m",
+          "displayName": "RCATP5M",
+          "canonicalName": "RCATP5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcata4m",
+          "displayName": "RCATA4M",
+          "canonicalName": "RCATA4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm3m-2",
+          "displayName": "RCATM3M",
+          "canonicalName": "RCATM3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm6m-2",
+          "displayName": "RCATM6M",
+          "canonicalName": "RCATM6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm7m-2",
+          "displayName": "RCATM7M",
+          "canonicalName": "RCATM7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnp5m",
+          "displayName": "RPNP5M",
+          "canonicalName": "RPNP5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnp4m",
+          "displayName": "RPNP4M",
+          "canonicalName": "RPNP4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnm7m",
+          "displayName": "RPNm7M",
+          "canonicalName": "RPNm7M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnm6m",
+          "displayName": "RPNM6M",
+          "canonicalName": "RPNM6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnm3m",
+          "displayName": "RPNM3M",
+          "canonicalName": "RPNM3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpna6m",
+          "displayName": "RPNA6M",
+          "canonicalName": "RPNA6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpna5m",
+          "displayName": "RPNA5M",
+          "canonicalName": "RPNA5M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpna4m",
+          "displayName": "RPNA4M",
+          "canonicalName": "RPNA4M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rpnm3m-2",
+          "displayName": "RPNm3M",
+          "canonicalName": "RPNm3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.a4md1",
+          "displayName": "A4md1",
+          "canonicalName": "A4md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p5md1",
+          "displayName": "P5md1",
+          "canonicalName": "P5md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p4md1",
+          "displayName": "P4md1",
+          "canonicalName": "P4md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m7md1",
+          "displayName": "m7md1",
+          "canonicalName": "m7md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m6md1",
+          "displayName": "m6md1",
+          "canonicalName": "m6md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m3md1",
+          "displayName": "m3md1",
+          "canonicalName": "m3md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m6md1-2",
+          "displayName": "M6md1",
+          "canonicalName": "M6md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m3md1-2",
+          "displayName": "M3md1",
+          "canonicalName": "M3md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.m7md1-2",
+          "displayName": "M7md1",
+          "canonicalName": "M7md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.p8md1",
+          "displayName": "P8md1",
+          "canonicalName": "P8md1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catp4m-2",
+          "displayName": "CATP4m",
+          "canonicalName": "CATP4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catp5m-2",
+          "displayName": "CATP5m",
+          "canonicalName": "CATP5m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.cata4m-2",
+          "displayName": "CATA4m",
+          "canonicalName": "CATA4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm3m-3",
+          "displayName": "CATM3m",
+          "canonicalName": "CATM3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm6m-3",
+          "displayName": "CATM6m",
+          "canonicalName": "CATM6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm3m-4",
+          "displayName": "CATm3m",
+          "canonicalName": "CATm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.catm6m-4",
+          "displayName": "CATm6M",
+          "canonicalName": "CATm6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatp4m-2",
+          "displayName": "RCATP4m",
+          "canonicalName": "RCATP4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatp5m-2",
+          "displayName": "RCATP5m",
+          "canonicalName": "RCATP5m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcata4m-2",
+          "displayName": "RCATA4m",
+          "canonicalName": "RCATA4m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm3m-3",
+          "displayName": "RCATM3m",
+          "canonicalName": "RCATM3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm6m-3",
+          "displayName": "RCATM6m",
+          "canonicalName": "RCATM6m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm3m-4",
+          "displayName": "RCATm3m",
+          "canonicalName": "RCATm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "compound-appoggiatura.rcatm6m-4",
+          "displayName": "RCATm6M",
+          "canonicalName": "RCATm6M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    },
+    {
+      "id": "mordent",
+      "displayName": "Mordent",
+      "sourceFile": "reference/source/transformations/NewEnhancedMordentTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 6,
+      "directImplementationBranchCount": 8,
+      "variants": [
+        {
+          "id": "mordent.ac",
+          "displayName": "AC",
+          "canonicalName": "AC",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.acr",
+          "displayName": "ACR",
+          "canonicalName": "ACR",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.ms",
+          "displayName": "MS",
+          "canonicalName": "MS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.msr",
+          "displayName": "MSR",
+          "canonicalName": "MSR",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.mlr",
+          "displayName": "MLR",
+          "canonicalName": "MLR",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.ml",
+          "displayName": "ML",
+          "canonicalName": "ML",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "mordent.m",
+          "displayName": "M",
+          "canonicalName": "M",
+          "state": "reference-only",
+          "selectable": false,
+          "supportsRandomSelection": false
+        },
+        {
+          "id": "mordent.mr",
+          "displayName": "MR",
+          "canonicalName": "MR",
+          "state": "reference-only",
+          "selectable": false,
+          "supportsRandomSelection": false
+        }
+      ]
+    },
+    {
+      "id": "slide",
+      "displayName": "Slide",
+      "sourceFile": "reference/source/transformations/NewEnhancedSlidesTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 74,
+      "directImplementationBranchCount": 74,
+      "variants": [
+        {
+          "id": "slide.sttm2m",
+          "displayName": "STTM2m",
+          "canonicalName": "STTM2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.sttm2m-2",
+          "displayName": "STTm2M",
+          "canonicalName": "STTm2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.sttm3m",
+          "displayName": "STTm3m",
+          "canonicalName": "STTm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.sttm2m-3",
+          "displayName": "STTM2M",
+          "canonicalName": "STTM2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.dsttm2m",
+          "displayName": "DSTTM2m",
+          "canonicalName": "DSTTM2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.dsttm2m-2",
+          "displayName": "DSTTm2M",
+          "canonicalName": "DSTTm2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.dsttm3m",
+          "displayName": "DSTTm3m",
+          "canonicalName": "DSTTm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.dsttm2m-3",
+          "displayName": "DSTTM2M",
+          "canonicalName": "DSTTM2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.isttm2m",
+          "displayName": "ISTTM2m",
+          "canonicalName": "ISTTM2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.isttm2m-2",
+          "displayName": "ISTTm2M",
+          "canonicalName": "ISTTm2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.isttm3m",
+          "displayName": "ISTTM3m",
+          "canonicalName": "ISTTM3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.isttm2m-3",
+          "displayName": "ISTTM2M",
+          "canonicalName": "ISTTM2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.disttm2m",
+          "displayName": "DISTTM2m",
+          "canonicalName": "DISTTM2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.disttm2m-2",
+          "displayName": "DISTTm2M",
+          "canonicalName": "DISTTm2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.disttm3m",
+          "displayName": "DISTTm3m",
+          "canonicalName": "DISTTm3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.disttm2m-3",
+          "displayName": "DISTTM2M",
+          "canonicalName": "DISTTM2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m2m",
+          "displayName": "TTSM2m2M",
+          "canonicalName": "TTSM2m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm3m2m",
+          "displayName": "TTSm3M2M",
+          "canonicalName": "TTSm3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m2m-2",
+          "displayName": "TTSm2M2M",
+          "canonicalName": "TTSm2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m2m-3",
+          "displayName": "TTSM2M2m",
+          "canonicalName": "TTSM2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m2m-4",
+          "displayName": "TTSM2M2M",
+          "canonicalName": "TTSM2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m3m",
+          "displayName": "TTSm2m3m",
+          "canonicalName": "TTSm2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm3m2m-2",
+          "displayName": "TTSm3M2m",
+          "canonicalName": "TTSm3M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsm2m3m-2",
+          "displayName": "TTSM2m3m",
+          "canonicalName": "TTSM2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m2m",
+          "displayName": "TTSd1M2m2M",
+          "canonicalName": "TTSd1M2m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m3m2m",
+          "displayName": "TTSd1m3M2M",
+          "canonicalName": "TTSd1m3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m2m-2",
+          "displayName": "TTSd1m2M2M",
+          "canonicalName": "TTSd1m2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m2m-3",
+          "displayName": "TTSd1M2M2m",
+          "canonicalName": "TTSd1M2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m2m-4",
+          "displayName": "TTSd1M2M2M",
+          "canonicalName": "TTSd1M2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m3m",
+          "displayName": "TTSd1m2m3m",
+          "canonicalName": "TTSd1m2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m3m2m-2",
+          "displayName": "TTSd1m3M2m",
+          "canonicalName": "TTSd1m3M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd1m2m3m-2",
+          "displayName": "TTSd1M2m3m",
+          "canonicalName": "TTSd1M2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m2m",
+          "displayName": "TTSd2M2m2M",
+          "canonicalName": "TTSd2M2m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m3m2m",
+          "displayName": "TTSd2m3M2M",
+          "canonicalName": "TTSd2m3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m2m-2",
+          "displayName": "TTSd2m2M2M",
+          "canonicalName": "TTSd2m2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m2m-3",
+          "displayName": "TTSd2M2M2m",
+          "canonicalName": "TTSd2M2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m2m-4",
+          "displayName": "TTSd2M2M2M",
+          "canonicalName": "TTSd2M2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m3m",
+          "displayName": "TTSd2m2m3m",
+          "canonicalName": "TTSd2m2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m3m2m-2",
+          "displayName": "TTSd2m3M2m",
+          "canonicalName": "TTSd2m3M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd2m2m3m-2",
+          "displayName": "TTSd2M2m3m",
+          "canonicalName": "TTSd2M2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m2m",
+          "displayName": "TTSd3M2m2M",
+          "canonicalName": "TTSd3M2m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m3m2m",
+          "displayName": "TTSd3m3M2M",
+          "canonicalName": "TTSd3m3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m2m-2",
+          "displayName": "TTSd3m2M2M",
+          "canonicalName": "TTSd3m2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m2m-3",
+          "displayName": "TTSd3M2M2m",
+          "canonicalName": "TTSd3M2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m2m-4",
+          "displayName": "TTSd3M2M2M",
+          "canonicalName": "TTSd3M2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m3m",
+          "displayName": "TTSd3m2m3m",
+          "canonicalName": "TTSd3m2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m3m2m-2",
+          "displayName": "TTSd3m3M2m",
+          "canonicalName": "TTSd3m3M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttsd3m2m3m-2",
+          "displayName": "TTSd3M2m3m",
+          "canonicalName": "TTSd3M2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm2m2m",
+          "displayName": "TTITM2M2M",
+          "canonicalName": "TTITM2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm2m2m-2",
+          "displayName": "TTITM2M2m",
+          "canonicalName": "TTITM2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm2m3m",
+          "displayName": "TTITM2m3M",
+          "canonicalName": "TTITM2m3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm2m2m-3",
+          "displayName": "TTITm2M2m",
+          "canonicalName": "TTITm2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm3m2m",
+          "displayName": "TTITm3M2M",
+          "canonicalName": "TTITm3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm3m2m-2",
+          "displayName": "TTITm3m2m",
+          "canonicalName": "TTITm3m2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ttitm2m2m-4",
+          "displayName": "TTITM2m2m",
+          "canonicalName": "TTITM2m2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m2m",
+          "displayName": "ITTITM2M2M",
+          "canonicalName": "ITTITM2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m3m",
+          "displayName": "ITTITm2M3m",
+          "canonicalName": "ITTITm2M3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm3m2m",
+          "displayName": "ITTITm3m2M",
+          "canonicalName": "ITTITm3m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm3m2m-2",
+          "displayName": "ITTITm3m2m",
+          "canonicalName": "ITTITm3m2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m3m-2",
+          "displayName": "ITTITM2M3m",
+          "canonicalName": "ITTITM2M3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m2m-2",
+          "displayName": "ITTITM2m2M",
+          "canonicalName": "ITTITM2m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m2m-3",
+          "displayName": "ITTITM2m2m",
+          "canonicalName": "ITTITM2m2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m3m-3",
+          "displayName": "ITTITM2m3m",
+          "canonicalName": "ITTITM2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m2m-4",
+          "displayName": "ITTITm2M2M",
+          "canonicalName": "ITTITm2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm2m3m-4",
+          "displayName": "ITTITm2m3M",
+          "canonicalName": "ITTITm2m3M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittitm3m2m-3",
+          "displayName": "ITTITm3M2M",
+          "canonicalName": "ITTITm3M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m2m",
+          "displayName": "ITTSM2M2m",
+          "canonicalName": "ITTSM2M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m2m-2",
+          "displayName": "ITTSm2M2M",
+          "canonicalName": "ITTSm2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m3m",
+          "displayName": "ITTSm2m3m",
+          "canonicalName": "ITTSm2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm3m2m",
+          "displayName": "ITTSm3M2m",
+          "canonicalName": "ITTSm3M2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm3m2m-2",
+          "displayName": "ITTSm3m2M",
+          "canonicalName": "ITTSm3m2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m2m-3",
+          "displayName": "ITTSM2M2M",
+          "canonicalName": "ITTSM2M2M",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m2m-4",
+          "displayName": "ITTSM2m2m",
+          "canonicalName": "ITTSM2m2m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "slide.ittsm2m3m-2",
+          "displayName": "ITTSM2m3m",
+          "canonicalName": "ITTSM2m3m",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    },
+    {
+      "id": "snap",
+      "displayName": "Snap",
+      "sourceFile": "reference/source/transformations/NewEnhancedSnapTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 5,
+      "directImplementationBranchCount": 5,
+      "variants": [
+        {
+          "id": "snap.sp1",
+          "displayName": "SP1",
+          "canonicalName": "SP1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "snap.sp5",
+          "displayName": "SP5",
+          "canonicalName": "SP5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "snap.spvm3",
+          "displayName": "SPvm3",
+          "canonicalName": "SPvm3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "snap.spvm3-2",
+          "displayName": "SPvM3",
+          "canonicalName": "SPvM3",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "snap.spp4",
+          "displayName": "SPp4",
+          "canonicalName": "SPp4",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    },
+    {
+      "id": "trill",
+      "displayName": "Trill",
+      "sourceFile": "reference/source/transformations/NewEnhancedTrillTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 56,
+      "directImplementationBranchCount": 56,
+      "variants": [
+        {
+          "id": "trill.btrrs1",
+          "displayName": "BTrRs1",
+          "canonicalName": "BTrRs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrrs5",
+          "displayName": "BTrRs5",
+          "canonicalName": "BTrRs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrs1",
+          "displayName": "CTrRs1",
+          "canonicalName": "CTrRs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrs5",
+          "displayName": "CTrRs5",
+          "canonicalName": "CTrRs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrrn1",
+          "displayName": "BTrRn1",
+          "canonicalName": "BTrRn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrrn5",
+          "displayName": "BTrRn5",
+          "canonicalName": "BTrRn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrn1",
+          "displayName": "CTrRn1",
+          "canonicalName": "CTrRn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrn5",
+          "displayName": "CTrRn5",
+          "canonicalName": "CTrRn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrrl1",
+          "displayName": "BTrRl1",
+          "canonicalName": "BTrRl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrrl5",
+          "displayName": "BTrRl5",
+          "canonicalName": "BTrRl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrl1",
+          "displayName": "CTrRl1",
+          "canonicalName": "CTrRl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrrl5",
+          "displayName": "CTrRl5",
+          "canonicalName": "CTrRl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrden1",
+          "displayName": "BTrDen1",
+          "canonicalName": "BTrDen1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrden5",
+          "displayName": "BTrDen5",
+          "canonicalName": "BTrDen5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrden1",
+          "displayName": "CTrDen1",
+          "canonicalName": "CTrDen1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrden5",
+          "displayName": "CTrDen5",
+          "canonicalName": "CTrDen5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdel1",
+          "displayName": "BTrDel1",
+          "canonicalName": "BTrDel1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdel5",
+          "displayName": "BTrDel5",
+          "canonicalName": "BTrDel5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdel1",
+          "displayName": "CTrDel1",
+          "canonicalName": "CTrDel1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdel5",
+          "displayName": "CTrDel5",
+          "canonicalName": "CTrDel5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btras1",
+          "displayName": "BTrAs1 ",
+          "canonicalName": "BTrAs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btras5",
+          "displayName": "BTrAs5 ",
+          "canonicalName": "BTrAs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctras1",
+          "displayName": "CTrAs1 ",
+          "canonicalName": "CTrAs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctras5",
+          "displayName": "CTrAs5 ",
+          "canonicalName": "CTrAs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btran1",
+          "displayName": "BTrAn1",
+          "canonicalName": "BTrAn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btran5",
+          "displayName": "BTrAn5",
+          "canonicalName": "BTrAn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctran1",
+          "displayName": "CTrAn1",
+          "canonicalName": "CTrAn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctran5",
+          "displayName": "CTrAn5",
+          "canonicalName": "CTrAn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btral1",
+          "displayName": "BTrAl1",
+          "canonicalName": "BTrAl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btral5",
+          "displayName": "BTrAl5",
+          "canonicalName": "BTrAl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctral1",
+          "displayName": "CTrAl1",
+          "canonicalName": "CTrAl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctral5",
+          "displayName": "CTrAl5",
+          "canonicalName": "CTrAl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrds1",
+          "displayName": "BTrDs1 ",
+          "canonicalName": "BTrDs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrds5",
+          "displayName": "BTrDs5 ",
+          "canonicalName": "BTrDs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrds1",
+          "displayName": "CTrDs1 ",
+          "canonicalName": "CTrDs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrds5",
+          "displayName": "CTrDs5 ",
+          "canonicalName": "CTrDs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdn1",
+          "displayName": "BTrDn1",
+          "canonicalName": "BTrDn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdn5",
+          "displayName": "BTrDn5",
+          "canonicalName": "BTrDn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdn1",
+          "displayName": "CTrDn1",
+          "canonicalName": "CTrDn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdn5",
+          "displayName": "CTrDn5",
+          "canonicalName": "CTrDn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdl1",
+          "displayName": "BTrDl1",
+          "canonicalName": "BTrDl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrdl5",
+          "displayName": "BTrDl5",
+          "canonicalName": "BTrDl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdl1",
+          "displayName": "CTrDl1",
+          "canonicalName": "CTrDl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrdl5",
+          "displayName": "CTrDl5",
+          "canonicalName": "CTrDl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrts1",
+          "displayName": "BTrTs1 ",
+          "canonicalName": "BTrTs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrts5",
+          "displayName": "BTrTs5 ",
+          "canonicalName": "BTrTs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrts1",
+          "displayName": "CTrTs1 ",
+          "canonicalName": "CTrTs1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrts5",
+          "displayName": "CTrTs5 ",
+          "canonicalName": "CTrTs5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrtn1",
+          "displayName": "BTrTn1",
+          "canonicalName": "BTrTn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrtn5",
+          "displayName": "BTrTn5",
+          "canonicalName": "BTrTn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrtn1",
+          "displayName": "CTrTn1",
+          "canonicalName": "CTrTn1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrtn5",
+          "displayName": "CTrTn5",
+          "canonicalName": "CTrTn5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrtl1",
+          "displayName": "BTrTl1",
+          "canonicalName": "BTrTl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.btrtl5",
+          "displayName": "BTrTl5",
+          "canonicalName": "BTrTl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrtl1",
+          "displayName": "CTrTl1",
+          "canonicalName": "CTrTl1",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "trill.ctrtl5",
+          "displayName": "CTrTl5",
+          "canonicalName": "CTrTl5",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    },
+    {
+      "id": "turn",
+      "displayName": "Turn",
+      "sourceFile": "reference/source/transformations/NewEnhancedTurnsTransformationMultipleUserChoice.cpp",
+      "declaredSelectableCount": 55,
+      "directImplementationBranchCount": 55,
+      "variants": [
+        {
+          "id": "turn.turn",
+          "displayName": "Turn",
+          "canonicalName": "Turn",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fturnf",
+          "displayName": "FTurnF",
+          "canonicalName": "FTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fturns",
+          "displayName": "FTurnS",
+          "canonicalName": "FTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bturnf",
+          "displayName": "BTurnF",
+          "canonicalName": "BTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bturns",
+          "displayName": "BTurnS",
+          "canonicalName": "BTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturnf",
+          "displayName": "FBTurnF",
+          "canonicalName": "FBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturns",
+          "displayName": "FBTurnS",
+          "canonicalName": "FBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturnff",
+          "displayName": "FBTurnFF",
+          "canonicalName": "FBTurnFF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturnss",
+          "displayName": "FBTurnSS",
+          "canonicalName": "FBTurnSS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturnfs",
+          "displayName": "FBTurnFS",
+          "canonicalName": "FBTurnFS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.fbturnsf",
+          "displayName": "FBTurnSF",
+          "canonicalName": "FBTurnSF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnt",
+          "displayName": "BNT",
+          "canonicalName": "BNT",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfturnf",
+          "displayName": "BNFTurnF",
+          "canonicalName": "BNFTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfturns",
+          "displayName": "BNFTurnS",
+          "canonicalName": "BNFTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnbturn",
+          "displayName": "BNBTurn",
+          "canonicalName": "BNBTurn",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnbturns",
+          "displayName": "BNBTurnS",
+          "canonicalName": "BNBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturnf",
+          "displayName": "BNFBTurnF",
+          "canonicalName": "BNFBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturns",
+          "displayName": "BNFBTurnS",
+          "canonicalName": "BNFBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturnff",
+          "displayName": "BNFBTurnFF",
+          "canonicalName": "BNFBTurnFF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturnss",
+          "displayName": "BNFBTurnSS",
+          "canonicalName": "BNFBTurnSS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturnfs",
+          "displayName": "BNFBTurnFS",
+          "canonicalName": "BNFBTurnFS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.bnfbturnsf",
+          "displayName": "BNFBTurnSF",
+          "canonicalName": "BNFBTurnSF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tt",
+          "displayName": "TT",
+          "canonicalName": "TT",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfturnf",
+          "displayName": "TFTurnF",
+          "canonicalName": "TFTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfturns",
+          "displayName": "TFTurnS",
+          "canonicalName": "TFTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tbturnf",
+          "displayName": "TBTurnF",
+          "canonicalName": "TBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tbturns",
+          "displayName": "TBTurnS",
+          "canonicalName": "TBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturnf",
+          "displayName": "TFBTurnF",
+          "canonicalName": "TFBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturns",
+          "displayName": "TFBTurnS",
+          "canonicalName": "TFBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturnff",
+          "displayName": "TFBTurnFF",
+          "canonicalName": "TFBTurnFF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturnss",
+          "displayName": "TFBTurnSS",
+          "canonicalName": "TFBTurnSS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturnfs",
+          "displayName": "TFBTurnFS",
+          "canonicalName": "TFBTurnFS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.tfbturnsf",
+          "displayName": "TFBTurnSF",
+          "canonicalName": "TFBTurnSF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32t",
+          "displayName": "P32T",
+          "canonicalName": "P32T",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fturnf",
+          "displayName": "P32FTurnF",
+          "canonicalName": "P32FTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fturns",
+          "displayName": "P32FTurnS",
+          "canonicalName": "P32FTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32bturnf",
+          "displayName": "P32BTurnF",
+          "canonicalName": "P32BTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32bturns",
+          "displayName": "P32BTurnS",
+          "canonicalName": "P32BTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturnf",
+          "displayName": "P32FBTurnF",
+          "canonicalName": "P32FBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturns",
+          "displayName": "P32FBTurnS",
+          "canonicalName": "P32FBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturnff",
+          "displayName": "P32FBTurnFF",
+          "canonicalName": "P32FBTurnFF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturnss",
+          "displayName": "P32FBTurnSS",
+          "canonicalName": "P32FBTurnSS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturnfs",
+          "displayName": "P32FBTurnFS",
+          "canonicalName": "P32FBTurnFS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.p32fbturnsf",
+          "displayName": "P32FBTurnSF",
+          "canonicalName": "P32FBTurnSF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.st",
+          "displayName": "ST",
+          "canonicalName": "ST",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfturnf",
+          "displayName": "SFTurnF",
+          "canonicalName": "SFTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfturns",
+          "displayName": "SFTurnS",
+          "canonicalName": "SFTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sbturnf",
+          "displayName": "SBTurnF",
+          "canonicalName": "SBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sbturns",
+          "displayName": "SBTurnS",
+          "canonicalName": "SBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturnf",
+          "displayName": "SFBTurnF",
+          "canonicalName": "SFBTurnF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturns",
+          "displayName": "SFBTurnS",
+          "canonicalName": "SFBTurnS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturnff",
+          "displayName": "SFBTurnFF",
+          "canonicalName": "SFBTurnFF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturnss",
+          "displayName": "SFBTurnSS",
+          "canonicalName": "SFBTurnSS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturnfs",
+          "displayName": "SFBTurnFS",
+          "canonicalName": "SFBTurnFS",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        },
+        {
+          "id": "turn.sfbturnsf",
+          "displayName": "SFBTurnSF",
+          "canonicalName": "SFBTurnSF",
+          "state": "reference-only",
+          "selectable": true,
+          "supportsRandomSelection": true
+        }
+      ]
+    }
+  ]
+}

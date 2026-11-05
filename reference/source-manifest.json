@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "archiveName": "WorkingSourceFiles.zip",
+  "archiveSha256": "119cd5dd2b9a74338df13c7a139ef4003d8944207e9a35581b1149777d003a60",
+  "sourceRoot": "reference/source",
+  "files": [
+    {
+      "path": "analyzer/NewFixedMidiFileAnalyzer.cpp",
+      "sizeBytes": 34629,
+      "sha256": "8eb05cb9bfaba3a4af0279c98939ceeb9297fd88c872472fd1c228f84fbffc44"
+    },
+    {
+      "path": "transformations/appoggiatura_variant_pool.cpp",
+      "sizeBytes": 3719,
+      "sha256": "adda8333037040fba52b37be3a6524ef96be8edb3e33f6e5a2ce43320649476a"
+    },
+    {
+      "path": "transformations/NewEnhancedAppoggiaturaTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 84098,
+      "sha256": "0a981b14a3acdde50cdda6cabbe2c9f3213e9f823343062188029bad72870871"
+    },
+    {
+      "path": "transformations/NewEnhancedCompoundAppoggiaturaTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 73959,
+      "sha256": "10842813f4378ee5e36e46ead13fea846a19c1b867343029155257522ad867ad"
+    },
+    {
+      "path": "transformations/NewEnhancedMordentTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 31013,
+      "sha256": "5514d0c2941186c9f7d5bbd316666a8f7e268f5e1a909875bd507e0141bb9d9c"
+    },
+    {
+      "path": "transformations/NewEnhancedSlidesTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 61166,
+      "sha256": "148c3e31f2de12673ea49d5638e9fa60793dc364f2e08291415b485a96e46ac8"
+    },
+    {
+      "path": "transformations/NewEnhancedSnapTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 33888,
+      "sha256": "b20237b6505283f5c8d69687aa0abb039b5f40b5fcb2c00310e6bca1f0365d86"
+    },
+    {
+      "path": "transformations/NewEnhancedTrillTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 48570,
+      "sha256": "1befcdb62a4534007200e84ccab6c8ea375c1441f4ceec5dee912bbce31e2387"
+    },
+    {
+      "path": "transformations/NewEnhancedTurnsTransformationMultipleUserChoice.cpp",
+      "sizeBytes": 53662,
+      "sha256": "2cfbbcc08c5d5c209edaf5857a9aaaa55a3695d00c8238c60ebbef4fa1f70aa0"
+    }
+  ]
+}
