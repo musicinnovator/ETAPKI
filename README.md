@@ -96,6 +96,7 @@ The first additive core is in place:
 - Phase 3 adds registry-backed adapters for all seven embellishment types, user-selected variant validation, and deterministic seeded random selection across the full exact catalog;
 - `reference/source` contains the imported C++ evidence unchanged, with `reference/source-manifest.json` for SHA-256 provenance;
 - Launching `etapki_cli.exe` without arguments opens a persistent interactive session with `catalog`, `inspect <file.mid>`, `help`, and `quit`; the same commands are available as one-shot command-line arguments.
+- `etapki_gui.exe` is the visible Windows application shell with MIDI open, 62-label selection, analysis, seven-type/variant browsing, seeded selection, and before/after/target preview controls.
 
 Build and test output belongs outside the repository on E:, for example:
 

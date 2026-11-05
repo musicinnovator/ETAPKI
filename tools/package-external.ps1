@@ -53,7 +53,7 @@ $createdDStage = $false
 
 try {
     if ($resolvedBuild -notlike 'E:\*') { throw "BuildDirectory must be on E:, not $resolvedBuild" }
-    $buildFiles = @('etapki_cli.exe', 'etapki_core_tests.exe')
+    $buildFiles = @('etapki_cli.exe', 'etapki_core_tests.exe', 'etapki_gui.exe')
     foreach ($file in $buildFiles) {
         if (-not (Test-Path -LiteralPath (Join-Path $resolvedBuild $file) -PathType Leaf)) {
             throw "Required build output is missing: $file"

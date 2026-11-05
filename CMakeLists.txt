@@ -34,6 +34,11 @@ endif()
 add_executable(etapki_cli src/app/main.cpp)
 target_link_libraries(etapki_cli PRIVATE etapki_core)
 
+if(WIN32)
+    add_executable(etapki_gui WIN32 src/app/gui_main.cpp)
+    target_link_libraries(etapki_gui PRIVATE etapki_core comdlg32)
+endif()
+
 if(ETAPKI_BUILD_TESTS)
     enable_testing()
     add_executable(etapki_core_tests tests/core_tests.cpp)

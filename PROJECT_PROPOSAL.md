@@ -305,6 +305,8 @@ Phase 3 now provides seven explicit registry-backed adapters, 478 exact variant 
 
 Phase 4 now provides the preview/effects boundary and state model: before/after/target render modes, loop regions, cancellable requests, play/pause/stop state, gain/pan, three-band EQ shaping, room/reverb processing, and named effect presets. Rendering refuses unapproved or missing sound libraries and clearly reports when a concrete instrument backend is not configured. The example configuration is intentionally disabled until the user supplies and approves a licensed high-quality library.
 
+The first visible Windows GUI shell is now included as `etapki_gui.exe`. It exposes MIDI import, label selection, analyzer status, type/variant browsing, deterministic seeded selection, and preview controls while the remaining visual design work continues in Phase 5.
+
 ### Phase 5: Modern UI
 
 - implement the analyzer dashboard and variant browser;
