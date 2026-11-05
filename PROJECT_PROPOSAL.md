@@ -295,6 +295,8 @@ Initial Phase 2 coverage now provides 14 conservative, source-supported methods 
 - support user-selected and deterministic random variants;
 - preserve all existing formulas and add newly discovered variants through the registry.
 
+Phase 3 now provides seven explicit registry-backed adapters, 478 exact variant entries, type ownership validation, user-selected variant lookup, and seeded deterministic random selection. Random selection is limited to selectable variants with a direct reference branch; branch-only and declared-without-direct-branch entries remain visible for reconciliation. The legacy formula bridge remains a separate guarded step, so a validated plan cannot be exported as if the formula had already executed.
+
 ### Phase 4: Preview and effects
 
 - integrate the approved high-quality sound library boundary;

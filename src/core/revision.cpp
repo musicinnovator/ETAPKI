@@ -22,7 +22,7 @@ bool MidiRevision::addOperation(TransformationOperation operation, RevisionError
     }
     const TransformationRouter router;
     const auto adapterResult = router.validate(operation, source_);
-    if (adapterResult.message.find("reference-only") == std::string::npos && !adapterResult.accepted) {
+    if (!adapterResult.accepted) {
         error = {adapterResult.message};
         return false;
     }

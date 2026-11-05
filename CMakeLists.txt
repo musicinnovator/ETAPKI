@@ -11,10 +11,12 @@ option(ETAPKI_BUILD_TESTS "Build ETAPKI core tests" ON)
 add_library(etapki_core
     src/core/analysis.cpp
     src/core/catalog.cpp
+    src/core/generated_variant_data.cpp
     src/core/integrity.cpp
     src/core/midi.cpp
     src/core/revision.cpp
     src/core/transformation.cpp
+    src/core/variant_registry.cpp
 )
 
 target_include_directories(etapki_core

@@ -2,10 +2,14 @@
 #include "etapki/core/analysis.h"
 #include "etapki/core/integrity.h"
 #include "etapki/core/midi.h"
+#include "etapki/core/transformation.h"
+#include "etapki/core/variant_registry.h"
 
 #include <fstream>
+#include <cstdint>
 #include <iostream>
 #include <iterator>
+#include <optional>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -37,6 +41,54 @@ std::vector<std::string> splitLabels(const std::string& csv) {
         if (!label.empty()) labels.push_back(label);
     }
     return labels;
+}
+
+std::optional<etapki::core::EmbellishmentTypeId> parseType(const std::string& value) {
+    using namespace etapki::core;
+    for (const auto& type : embellishmentTypes()) {
+        if (type.stableId == value) return type.id;
+    }
+    return std::nullopt;
+}
+
+int printVariants(const std::string& typeName) {
+    using namespace etapki::core;
+    const auto type = parseType(typeName);
+    if (!type.has_value()) {
+        std::cerr << "Unknown embellishment type: " << typeName << '\n';
+        return 1;
+    }
+    const auto variants = VariantRegistry::forType(*type);
+    std::cout << "Variants for " << typeName << ": " << variants.size() << '\n';
+    for (const auto& variant : variants) {
+        std::cout << variant.id << " | " << variant.displayName << " | "
+                  << toString(variant.state) << " | selectable=" << (variant.selectable ? "yes" : "no") << '\n';
+    }
+    return 0;
+}
+
+int chooseVariant(const std::string& typeName, const std::string& seedText) {
+    using namespace etapki::core;
+    const auto type = parseType(typeName);
+    if (!type.has_value()) {
+        std::cerr << "Unknown embellishment type: " << typeName << '\n';
+        return 1;
+    }
+    try {
+        const auto seed = static_cast<std::uint64_t>(std::stoull(seedText));
+        TransformationRouter router;
+        const auto selection = router.chooseRandom(*type, seed);
+        if (!selection.has_value()) {
+            std::cerr << "No selectable executable-reference variants are available for " << typeName << '\n';
+            return 2;
+        }
+        std::cout << "Seed: " << selection->seed << '\n'
+                  << "Selected: " << selection->variant.id << " | " << selection->variant.displayName << '\n';
+        return 0;
+    } catch (const std::exception&) {
+        std::cerr << "Seed must be an unsigned integer.\n";
+        return 1;
+    }
 }
 
 int inspect(const std::string& path) {
@@ -101,7 +153,7 @@ int analyze(const std::string& path, const std::string& labelsCsv) {
 
 void interactive() {
     std::cout << "ETAPKI Phase 2 analyzer core\n"
-              << "Commands: catalog | inspect <file.mid> | analyze <file.mid> <labels> | help | quit\n";
+              << "Commands: catalog | variants <type> | choose <type> <seed> | inspect <file.mid> | analyze <file.mid> <labels> | help | quit\n";
     printCatalog();
     std::string command;
     while (true) {
@@ -110,6 +162,8 @@ void interactive() {
         if (command == "quit" || command == "exit") break;
         if (command == "help") {
             std::cout << "catalog          Show the seven-type and 62-label catalog\n"
+                      << "variants <type>  List registry-backed variants\n"
+                      << "choose <type> <seed>  Deterministic random variant selection\n"
                       << "inspect <file>   Validate and inspect a MIDI file\n"
                       << "analyze <file> <labels>  Analyze comma-separated labels\n"
                       << "quit             Close ETAPKI\n";
@@ -117,6 +171,22 @@ void interactive() {
         }
         if (command == "catalog") {
             printCatalog();
+            continue;
+        }
+        const std::string variantsPrefix = "variants ";
+        if (command.rfind(variantsPrefix, 0) == 0) {
+            (void)printVariants(command.substr(variantsPrefix.size()));
+            continue;
+        }
+        const std::string choosePrefix = "choose ";
+        if (command.rfind(choosePrefix, 0) == 0) {
+            const auto separator = command.find(' ', choosePrefix.size());
+            if (separator != std::string::npos) {
+                (void)chooseVariant(command.substr(choosePrefix.size(), separator - choosePrefix.size()),
+                                    command.substr(separator + 1));
+            } else {
+                std::cout << "Usage: choose <type> <seed>\n";
+            }
             continue;
         }
         const std::string prefix = "inspect ";
@@ -155,8 +225,10 @@ int main(int argc, char** argv) {
         printCatalog();
         return 0;
     }
+    if (std::string(argv[1]) == "variants" && argc == 3) return printVariants(argv[2]);
+    if (std::string(argv[1]) == "choose" && argc == 4) return chooseVariant(argv[2], argv[3]);
     if (std::string(argv[1]) == "inspect" && argc == 3) return inspect(argv[2]);
     if (std::string(argv[1]) == "analyze" && argc == 4) return analyze(argv[2], argv[3]);
-    std::cerr << "Usage: etapki_cli catalog | inspect <file.mid> | analyze <file.mid> <labels>\n";
+    std::cerr << "Usage: etapki_cli catalog | variants <type> | choose <type> <seed> | inspect <file.mid> | analyze <file.mid> <labels>\n";
     return 1;
 }

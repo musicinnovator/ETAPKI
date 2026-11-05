@@ -4,6 +4,7 @@
 #include "etapki/core/midi.h"
 #include "etapki/core/revision.h"
 #include "etapki/core/transformation.h"
+#include "etapki/core/variant_registry.h"
 
 #include <algorithm>
 #include <cassert>
@@ -81,7 +82,9 @@ void testRevisionIsNonDestructive() {
     assert(document.has_value());
     MidiRevision revision(*document);
     RevisionError revisionError;
-    assert(revision.addOperation({"op-1", EmbellishmentTypeId::Trill, "trill.example", {1}, 42}, revisionError));
+    const auto trillVariants = VariantRegistry::forType(EmbellishmentTypeId::Trill, true);
+    assert(!trillVariants.empty());
+    assert(revision.addOperation({"op-1", EmbellishmentTypeId::Trill, trillVariants.front().id, {1}, 42}, revisionError));
     assert(document->serialize() == input);
     RevisionError exportError;
     assert(revision.exportBytes(exportError).empty());
@@ -98,9 +101,29 @@ void testSevenTypeRouterIsExplicit() {
     assert(document.has_value());
     TransformationRouter router;
     for (const auto& type : embellishmentTypes()) {
-        const auto result = router.validate({"router-test", type.id, "example", {1}, 7}, *document);
-        assert(!result.accepted);
-        assert(result.message.find("reference-only") != std::string::npos);
+        const auto variants = VariantRegistry::forType(type.id, true);
+        assert(!variants.empty());
+        const auto result = router.validate({"router-test", type.id, variants.front().id, {1}, 7}, *document);
+        assert(result.accepted);
+        assert(!result.executable);
+        assert(result.message.find("formula bridge pending") != std::string::npos);
+    }
+    const auto invalid = router.validate({"invalid", EmbellishmentTypeId::Turn, "not-a-variant", {1}, 0}, *document);
+    assert(!invalid.accepted);
+}
+
+void testDeterministicVariantSelection() {
+    using namespace etapki::core;
+    TransformationRouter router;
+    for (const auto& type : embellishmentTypes()) {
+        const auto first = router.chooseRandom(type.id, 123456);
+        const auto second = router.chooseRandom(type.id, 123456);
+        assert(first.has_value());
+        assert(second.has_value());
+        assert(first->variant.id == second->variant.id);
+        assert(first->seed == 123456);
+        assert(first->variant.type == type.id);
+        assert(first->variant.selectable);
     }
 }
 
@@ -155,6 +178,7 @@ int main() {
     testMalformedMidiRejected();
     testRevisionIsNonDestructive();
     testSevenTypeRouterIsExplicit();
+    testDeterministicVariantSelection();
     testAnalysisMethodsAndCancellation();
     testPhase2FixtureFindings();
     std::cout << "ETAPKI core tests passed\n";

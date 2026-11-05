@@ -93,6 +93,7 @@ The first additive core is in place:
 - `data/variant_registry.json` records the exact case-sensitive source inventory;
 - `data/analysis_label_registry.json` records all 62 labels, including 14 integrated methods, 24 reference-only methods, and 24 current placeholders;
 - `src/core` provides a bounds-checked MIDI parser, byte-preserving serializer, integrity gate, revision plan, and explicit seven-type reference-only router;
+- Phase 3 adds registry-backed adapters for all seven embellishment types, user-selected variant validation, and deterministic seeded random selection across the full exact catalog;
 - `reference/source` contains the imported C++ evidence unchanged, with `reference/source-manifest.json` for SHA-256 provenance;
 - Launching `etapki_cli.exe` without arguments opens a persistent interactive session with `catalog`, `inspect <file.mid>`, `help`, and `quit`; the same commands are available as one-shot command-line arguments.
 
@@ -105,3 +106,5 @@ ctest --test-dir E:\ETAPKIBuilds\etapki-core --output-on-failure
 ```
 
 Use `tools/package-external.ps1` only after validation, with a required label and an E: build directory. It creates distinct, verified package outputs on E: and D:.
+
+Phase 3 records selections safely but keeps export guarded until each legacy formula entry point has been isolated and characterization-tested. This prevents a registry selection from being mistaken for a completed formula execution.
