@@ -30,7 +30,7 @@ Additional variants have already been found outside this baseline and must be ad
 
 ## MIDI File Analyzer
 
-The analyzer defines 62 analysis labels. Labels are separate from embellishment variants. Some labels are currently placeholders because their detection methods have not yet been implemented. The UI must show whether each label is implemented, placeholder, blocked, or deprecated; a placeholder must never report a positive match.
+The analyzer defines 62 analysis labels. Labels are separate from embellishment variants. The current Phase 2 matrix contains 14 integrated methods, 24 reference-only methods awaiting integration, and 24 placeholders. The UI must show whether each label is implemented, placeholder, blocked, or deprecated; a placeholder must never report a positive match.
 
 The intended workflow is:
 
@@ -91,7 +91,7 @@ See [AGENTS.md](AGENTS.md) for the complete repository operating rules and [PROJ
 The first additive core is in place:
 
 - `data/variant_registry.json` records the exact case-sensitive source inventory;
-- `data/analysis_label_registry.json` records all 62 labels, including 24 current placeholders;
+- `data/analysis_label_registry.json` records all 62 labels, including 14 integrated methods, 24 reference-only methods, and 24 current placeholders;
 - `src/core` provides a bounds-checked MIDI parser, byte-preserving serializer, integrity gate, revision plan, and explicit seven-type reference-only router;
 - `reference/source` contains the imported C++ evidence unchanged, with `reference/source-manifest.json` for SHA-256 provenance;
 - Launching `etapki_cli.exe` without arguments opens a persistent interactive session with `catalog`, `inspect <file.mid>`, `help`, and `quit`; the same commands are available as one-shot command-line arguments.

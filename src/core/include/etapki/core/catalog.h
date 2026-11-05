@@ -52,6 +52,7 @@ struct AnalysisLabelDescriptor {
 const std::vector<EmbellishmentTypeDescriptor>& embellishmentTypes();
 const std::vector<VariantDescriptor>& baselineVariantDescriptors();
 const std::vector<AnalysisLabelDescriptor>& analysisLabels();
+bool isIntegratedAnalysisLabel(const std::string& label) noexcept;
 
 const char* toString(EmbellishmentTypeId type) noexcept;
 const char* toString(ImplementationState state) noexcept;

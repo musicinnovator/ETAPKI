@@ -119,6 +119,7 @@ foreach ($spec in $transformationSpecs) {
 
 $analyzerPath = Join-Path (Join-Path $SourceRoot 'analyzer') 'NewFixedMidiFileAnalyzer.cpp'
 $analyzerText = Get-SourceText $analyzerPath
+$integratedLabels = @('RN', 'U2R', 'FN', 'I8', 'LP', 'RLN', 'QN', 'I3', 'BM', 'MM', 'EM', 'LAD', 'DLP3', 'DI')
 $labelMatch = [regex]::Match($analyzerText, '(?s)allLabels\s*=\s*\{(.*?)\};')
 if (-not $labelMatch.Success) { throw 'Could not find the analyzer label catalog.' }
 $labels = @(Get-UniqueStrings $labelMatch.Groups[1].Value '"([^"]+)"')
@@ -131,10 +132,10 @@ foreach ($label in $labels) {
     $labelDescriptors.Add([ordered]@{
         number = $number
         id = $label
-        state = if ($implementedInReference) { 'reference-implemented-not-integrated' } else { 'placeholder-no-detection-method' }
-        detectionMethodId = if ($implementedInReference) { "reference.processLabels.$label" } else { "unimplemented.$label" }
+        state = if ($integratedLabels -contains $label) { 'integrated' } elseif ($implementedInReference) { 'reference-implemented-not-integrated' } else { 'placeholder-no-detection-method' }
+        detectionMethodId = if ($integratedLabels -contains $label) { "analysis.$label" } elseif ($implementedInReference) { "reference.processLabels.$label" } else { "unimplemented.$label" }
         sourceFile = 'reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp'
-        note = if ($implementedInReference) { 'Reference analyzer contains a detection rule; integration and characterization are pending.' } else { 'Label is catalogued but no detection rule was found in processLabels.' }
+        note = if ($integratedLabels -contains $label) { 'Implemented in the additive Phase 2 analyzer with confidence and evidence.' } elseif ($implementedInReference) { 'Reference analyzer contains a detection rule; integration and characterization are pending.' } else { 'Label is catalogued but no detection rule was found in processLabels.' }
     })
     $number++
 }

@@ -1,0 +1,14 @@
+ETAPKI Phase 2 analysis fixture
+
+Synthetic format-0 MIDI note sequence used by core_tests.cpp:
+60, 62, 60, 72, 69, 65
+
+Expected conservative detections include:
+- U2R: 60 -> 62 -> 60
+- I8 and LP: 60 -> 72
+- I3 and DLP3: 72 -> 69
+- DI: 60 -> 62 (two semitones)
+- BM/MM/EM: first, middle, and final track notes
+- QN: each note duration is 96 ticks, below the 256-tick reference threshold
+
+The fixture is synthetic and does not alter any imported formula source.

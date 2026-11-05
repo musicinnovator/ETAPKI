@@ -57,7 +57,7 @@ The application must distinguish:
 - `Blocked`: a method is planned but requires a documented prerequisite or musical rule;
 - `Deprecated`: retained only for compatibility and not offered for new analysis.
 
-The label registry must include the label ID, display name, detection method ID, status, confidence/threshold requirements, supported MIDI constructs, and tests. A placeholder may never claim a positive match. If a user selects a placeholder label, the UI must explain that no detection method is available and must not modify the file.
+The label registry must include the label ID, display name, detection method ID, status, confidence/threshold requirements, supported MIDI constructs, and tests. The current Phase 2 matrix contains 14 integrated methods, 24 reference-only methods awaiting integration, and 24 placeholders. A placeholder may never claim a positive match. If a user selects a placeholder label, the UI must explain that no detection method is available and must not modify the file.
 
 Future label methods are to be added additively in separate analyzers or method units. Do not alter existing detection formulas without characterization tests and explicit approval.
 

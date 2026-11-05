@@ -7,58 +7,58 @@
     {
       "number": 1,
       "id": "RN",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.RN",
+      "state": "integrated",
+      "detectionMethodId": "analysis.RN",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 2,
       "id": "U2R",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.U2R",
+      "state": "integrated",
+      "detectionMethodId": "analysis.U2R",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 3,
       "id": "FN",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.FN",
+      "state": "integrated",
+      "detectionMethodId": "analysis.FN",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 4,
       "id": "I8",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.I8",
+      "state": "integrated",
+      "detectionMethodId": "analysis.I8",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 5,
       "id": "LP",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.LP",
+      "state": "integrated",
+      "detectionMethodId": "analysis.LP",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 6,
       "id": "RLN",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.RLN",
+      "state": "integrated",
+      "detectionMethodId": "analysis.RLN",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 7,
       "id": "QN",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.QN",
+      "state": "integrated",
+      "detectionMethodId": "analysis.QN",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 8,
@@ -71,34 +71,34 @@
     {
       "number": 9,
       "id": "I3",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.I3",
+      "state": "integrated",
+      "detectionMethodId": "analysis.I3",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 10,
       "id": "BM",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.BM",
+      "state": "integrated",
+      "detectionMethodId": "analysis.BM",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 11,
       "id": "MM",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.MM",
+      "state": "integrated",
+      "detectionMethodId": "analysis.MM",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 12,
       "id": "EM",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.EM",
+      "state": "integrated",
+      "detectionMethodId": "analysis.EM",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 13,
@@ -183,10 +183,10 @@
     {
       "number": 23,
       "id": "LAD",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.LAD",
+      "state": "integrated",
+      "detectionMethodId": "analysis.LAD",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 24,
@@ -311,10 +311,10 @@
     {
       "number": 39,
       "id": "DI",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.DI",
+      "state": "integrated",
+      "detectionMethodId": "analysis.DI",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 40,
@@ -487,10 +487,10 @@
     {
       "number": 61,
       "id": "DLP3",
-      "state": "reference-implemented-not-integrated",
-      "detectionMethodId": "reference.processLabels.DLP3",
+      "state": "integrated",
+      "detectionMethodId": "analysis.DLP3",
       "sourceFile": "reference/source/analyzer/NewFixedMidiFileAnalyzer.cpp",
-      "note": "Reference analyzer contains a detection rule; integration and characterization are pending."
+      "note": "Implemented in the additive Phase 2 analyzer with confidence and evidence."
     },
     {
       "number": 62,

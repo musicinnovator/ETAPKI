@@ -42,20 +42,36 @@ const std::vector<AnalysisLabelDescriptor>& analysisLabels() {
         "Mmd7", "MmAug6", "MmAug4", "Mmm3", "SPCM", "SPDM", "SSN", "SVN", "ANS", "ANL", "FTB", "CDB"
     };
 
+    static const std::array<const char*, 14> integrated{
+        "RN", "U2R", "FN", "I8", "LP", "RLN", "QN", "I3", "BM", "MM", "EM", "LAD", "DLP3", "DI"
+    };
+
     static const std::vector<AnalysisLabelDescriptor> descriptors = [] {
         std::vector<AnalysisLabelDescriptor> result;
         result.reserve(labels.size());
         for (const auto* label : labels) {
             const bool placeholder = std::find_if(placeholders.begin(), placeholders.end(),
                                                   [label](const auto* candidate) { return std::string(candidate) == label; }) != placeholders.end();
-            result.push_back({label, placeholder ? ImplementationState::Placeholder : ImplementationState::ReferenceOnly,
-                              placeholder ? std::string("unimplemented.") + label : std::string("reference.processLabels.") + label,
+            const bool isIntegrated = std::find_if(integrated.begin(), integrated.end(),
+                                                   [label](const auto* candidate) { return std::string(candidate) == label; }) != integrated.end();
+            result.push_back({label,
+                              placeholder ? ImplementationState::Placeholder : (isIntegrated ? ImplementationState::Integrated : ImplementationState::ReferenceOnly),
+                              placeholder ? std::string("unimplemented.") + label : (isIntegrated ? std::string("analysis.") + label : std::string("reference.processLabels.") + label),
                               placeholder ? "Label is catalogued but no detection rule was found in the reference processLabels method."
-                                          : "Detection exists in the imported reference analyzer; integration and characterization are pending."});
+                                          : (isIntegrated ? "Detection is implemented in the additive Phase 2 analyzer." : "Detection exists in the imported reference analyzer; integration is pending.")});
         }
         return result;
     }();
     return descriptors;
+}
+
+bool isIntegratedAnalysisLabel(const std::string& label) noexcept {
+    static const std::array<const char*, 14> integrated{
+        "RN", "U2R", "FN", "I8", "LP", "RLN", "QN", "I3", "BM", "MM", "EM", "LAD", "DLP3", "DI"
+    };
+    return std::find_if(integrated.begin(), integrated.end(), [&label](const auto* candidate) {
+        return label == candidate;
+    }) != integrated.end();
 }
 
 const char* toString(EmbellishmentTypeId type) noexcept {

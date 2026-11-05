@@ -287,6 +287,8 @@ If an external destination is unavailable, do not silently substitute C: or clai
 - add fixtures and confidence explanations;
 - expose progress, cancellation, and method status in the UI.
 
+Initial Phase 2 coverage now provides 14 conservative, source-supported methods (`RN`, `U2R`, `FN`, `I8`, `LP`, `RLN`, `QN`, `I3`, `BM`, `MM`, `EM`, `LAD`, `DLP3`, and `DI`) with structured findings, confidence, evidence, progress callbacks, cancellation, and fixture tests. The remaining matrix is explicit: 24 reference-only methods still require integration and 24 labels remain placeholders because their musical detection definitions are not present in the supplied source evidence.
+
 ### Phase 3: Transformation integration
 
 - add typed adapters for all seven types;

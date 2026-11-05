@@ -9,6 +9,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(ETAPKI_BUILD_TESTS "Build ETAPKI core tests" ON)
 
 add_library(etapki_core
+    src/core/analysis.cpp
     src/core/catalog.cpp
     src/core/integrity.cpp
     src/core/midi.cpp
