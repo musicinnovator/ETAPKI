@@ -1,0 +1,9 @@
+{
+  "id": "approved-library-id",
+  "displayName": "Approved high-quality library",
+  "path": "E:/AudioLibraries/approved-library.sf2",
+  "license": "Record the applicable license or user-owned entitlement here",
+  "approved": false,
+  "highQuality": true,
+  "notes": "Set approved to true only after the library license and backend compatibility have been verified. ETAPKI does not ship a placeholder synth."
+}

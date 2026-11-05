@@ -108,3 +108,5 @@ ctest --test-dir E:\ETAPKIBuilds\etapki-core --output-on-failure
 Use `tools/package-external.ps1` only after validation, with a required label and an E: build directory. It creates distinct, verified package outputs on E: and D:.
 
 Phase 3 records selections safely but keeps export guarded until each legacy formula entry point has been isolated and characterization-tested. This prevents a registry selection from being mistaken for a completed formula execution.
+
+Phase 4 adds a preview controller, before/after/target modes, loop state, cancellable rendering, playback state transitions, volume/pan/EQ/reverb-room effects, and separate effect presets. Sound rendering requires an approved external high-quality library/backend; see [sound_library.example.json](data/sound_library.example.json). No placeholder synth is used.

@@ -303,6 +303,8 @@ Phase 3 now provides seven explicit registry-backed adapters, 478 exact variant 
 - add before/after playback, looping, target audition, cancellation, and effects;
 - add preview presets separate from MIDI revisions.
 
+Phase 4 now provides the preview/effects boundary and state model: before/after/target render modes, loop regions, cancellable requests, play/pause/stop state, gain/pan, three-band EQ shaping, room/reverb processing, and named effect presets. Rendering refuses unapproved or missing sound libraries and clearly reports when a concrete instrument backend is not configured. The example configuration is intentionally disabled until the user supplies and approves a licensed high-quality library.
+
 ### Phase 5: Modern UI
 
 - implement the analyzer dashboard and variant browser;

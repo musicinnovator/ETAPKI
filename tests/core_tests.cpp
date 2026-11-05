@@ -2,6 +2,7 @@
 #include "etapki/core/analysis.h"
 #include "etapki/core/integrity.h"
 #include "etapki/core/midi.h"
+#include "etapki/core/preview.h"
 #include "etapki/core/revision.h"
 #include "etapki/core/transformation.h"
 #include "etapki/core/variant_registry.h"
@@ -170,6 +171,53 @@ void testPhase2FixtureFindings() {
     }
 }
 
+class TestPreviewBackend final : public etapki::core::PreviewBackend {
+public:
+    etapki::core::PreviewResult render(const etapki::core::PreviewRequest&,
+                                       const std::function<bool()>& isCancelled,
+                                       const std::function<void(double)>& onProgress) override {
+        if (isCancelled && isCancelled()) return {false, true, {}, "cancelled"};
+        etapki::core::AudioBuffer buffer;
+        buffer.sampleRate = 48000;
+        buffer.left.assign(2048, 0.25F);
+        buffer.right.assign(2048, 0.25F);
+        if (onProgress) onProgress(1.0);
+        return {true, false, std::move(buffer), "test backend"};
+    }
+};
+
+void testPreviewEffectsAndPlaybackState() {
+    using namespace etapki::core;
+    const auto input = minimalMidi();
+    MidiError parseError;
+    const auto document = MidiDocument::parse(input, parseError);
+    assert(document.has_value());
+    assert(effectPresets().size() >= 3);
+    AudioBuffer buffer{48000, std::vector<float>(2048, 0.25F), std::vector<float>(2048, 0.25F)};
+    EffectsChain chain(effectPresets()[1].settings);
+    assert(chain.process(buffer));
+    assert(buffer.frames() == 2048);
+
+    PreviewController controller;
+    controller.setMode(PreviewMode::After);
+    controller.setLoop({0, 96, true});
+    TestPreviewBackend backend;
+    SoundLibraryDescriptor testLibrary{"test", "Approved test library", "E:\\approved.sf2", "test-license", true, true};
+    const auto result = controller.render(*document, nullptr, testLibrary, backend, effectPresets()[2].settings);
+    assert(result.rendered);
+    assert(controller.play());
+    assert(controller.playbackState() == PlaybackState::Playing);
+    controller.pause();
+    assert(controller.playbackState() == PlaybackState::Paused);
+    controller.stop();
+    assert(controller.playbackState() == PlaybackState::Stopped);
+
+    ApprovedLibraryBackend approvedBackend;
+    const auto rejected = approvedBackend.render({*document, nullptr, PreviewMode::Before, {}, {}, {}}, {}, {});
+    assert(!rejected.rendered);
+    assert(!rejected.message.empty());
+}
+
 } // namespace
 
 int main() {
@@ -181,6 +229,7 @@ int main() {
     testDeterministicVariantSelection();
     testAnalysisMethodsAndCancellation();
     testPhase2FixtureFindings();
+    testPreviewEffectsAndPlaybackState();
     std::cout << "ETAPKI core tests passed\n";
     return 0;
 }

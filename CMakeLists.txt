@@ -14,6 +14,7 @@ add_library(etapki_core
     src/core/generated_variant_data.cpp
     src/core/integrity.cpp
     src/core/midi.cpp
+    src/core/preview.cpp
     src/core/revision.cpp
     src/core/transformation.cpp
     src/core/variant_registry.cpp

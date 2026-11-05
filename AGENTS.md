@@ -110,6 +110,8 @@ The requested 3D presentation should be purposeful rather than decorative. Use a
 
 The preview engine must use a high-quality, legally distributable or user-supplied sound library. Do not add a low-quality placeholder synth as the product sound. Use a pluggable instrument/rendering boundary so licensed sampled instruments, SoundFont/SFZ libraries, or another approved renderer can be selected without changing transformation formulas. Preview controls should include play/pause, stop, loop selection, before/after comparison, audition of a selected finding, and re-selection without restart.
 
+Phase 4 preview code must reject missing, unapproved, unlicensed, or unsupported sound libraries. An effects-only test buffer is permitted for unit tests, but it must never be presented as the product's musical instrument renderer. A backend that validates a library but cannot render must return an explicit unavailable status rather than silently synthesizing replacement audio.
+
 The effects suite should be additive and bypassable, with at least reverb/room ambience, pan, volume, and EQ. Keep effect parameters separate from MIDI transformation data. Render previews off the source model and keep the original MIDI and prior revisions intact.
 
 ## Storage, drives, and repository policy
