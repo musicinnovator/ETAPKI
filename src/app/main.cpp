@@ -52,14 +52,48 @@ int inspect(const std::string& path) {
     return report.valid ? 0 : 4;
 }
 
+void interactive() {
+    std::cout << "ETAPKI Phase 1 interactive core\n"
+              << "Commands: catalog | inspect <file.mid> | help | quit\n";
+    printCatalog();
+    std::string command;
+    while (true) {
+        std::cout << "etapki> " << std::flush;
+        if (!std::getline(std::cin, command)) break;
+        if (command == "quit" || command == "exit") break;
+        if (command == "help") {
+            std::cout << "catalog          Show the seven-type and 62-label catalog\n"
+                      << "inspect <file>   Validate and inspect a MIDI file\n"
+                      << "quit             Close ETAPKI\n";
+            continue;
+        }
+        if (command == "catalog") {
+            printCatalog();
+            continue;
+        }
+        const std::string prefix = "inspect ";
+        if (command.rfind(prefix, 0) == 0 && command.size() > prefix.size()) {
+            std::string path = command.substr(prefix.size());
+            if (path.size() >= 2 && path.front() == '"' && path.back() == '"') {
+                path = path.substr(1, path.size() - 2);
+            }
+            (void)inspect(path);
+            continue;
+        }
+        if (!command.empty()) std::cout << "Unknown command. Type help.\n";
+    }
+    std::cout << "ETAPKI closed.\n";
+}
+
 } // namespace
 
 int main(int argc, char** argv) {
-    if (argc < 2 || std::string(argv[1]) == "catalog") {
+    if (argc < 2) {
+        interactive();
+        return 0;
+    }
+    if (std::string(argv[1]) == "catalog") {
         printCatalog();
-        if (argc < 2) {
-            std::cout << "Usage: etapki_cli catalog | inspect <file.mid>\n";
-        }
         return 0;
     }
     if (std::string(argv[1]) == "inspect" && argc == 3) return inspect(argv[2]);

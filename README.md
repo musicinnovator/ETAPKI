@@ -94,7 +94,7 @@ The first additive core is in place:
 - `data/analysis_label_registry.json` records all 62 labels, including 24 current placeholders;
 - `src/core` provides a bounds-checked MIDI parser, byte-preserving serializer, integrity gate, revision plan, and explicit seven-type reference-only router;
 - `reference/source` contains the imported C++ evidence unchanged, with `reference/source-manifest.json` for SHA-256 provenance;
-- `etapki_cli catalog` reports the registry baseline and `etapki_cli inspect <file.mid>` validates a MIDI file and its byte-preserving export path.
+- Launching `etapki_cli.exe` without arguments opens a persistent interactive session with `catalog`, `inspect <file.mid>`, `help`, and `quit`; the same commands are available as one-shot command-line arguments.
 
 Build and test output belongs outside the repository on E:, for example:
 
